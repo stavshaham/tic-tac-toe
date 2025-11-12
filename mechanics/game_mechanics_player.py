@@ -54,13 +54,13 @@ def check_win():
     check_c = check_columns()
     check_r = check_rows()
     check_d = check_diagonals()
-    if (check_c is not None and check_c != ''):
+    if (check_c is not None and check_c != '' and check_c != ' '):
         vs.end_game(check_c)
         return check_c
-    if (check_r is not None and check_r != ''):
+    if (check_r is not None and check_r != '' and check_r != ' '):
         vs.end_game(check_r)
         return check_r
-    if (check_d is not None and check_d != ''):
+    if (check_d is not None and check_d != '' and check_d != ' '):
         vs.end_game(check_d)
         return check_d
     if (is_board_full()):
